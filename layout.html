@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head><title>PracticeLayout</title>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<style>
+		body{ margin: 0px;
+		}
+		#container{ width: 100vw;}
+
+		#container div{ position:fixed;
+		}
+		          
+		.column{
+			width:25vw;
+			top:0px;
+			bottom:0px;
+			
+		}  
+		#contentArea{
+			width:50vw;
+			top: 0px;
+			left:25vw;
+			right:25vw;
+			bottom:0px;
+			background-color: yellow;
+		}
+		#leftColumn{
+			left:0px;
+			right:75vw;
+			height:relative;
+			
+		}
+		#rightColumn {
+			left:75vw;
+			right:0px;
+			height:relative;
+			
+
+			}
+		#contentArea iframe { 
+			width:98%;
+			margin:5px;
+            height:50%;
+            
+
+		}	
+
+ 
+	</style>
+</head>
+
+     <body>
+	  <div id="fb-root"></div>
+ 	      <script>(function(d, s, id) {
+  	      var js, fjs = d.getElementsByTagName(s)[0];
+  	      if (d.getElementById(id)) return;
+  	      js = d.createElement(s); js.id = id;
+  	      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  	f     js.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<div id="container">
+
+
+	<div id="leftColumn" class="column">
+		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFTV%2F%3Ffref%3Dnf&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+	</div>	
+
+	
+
+	<div id="contentArea">
+		<h1> BILLBOARD TOP ON THE LIST</h1>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/cmSbXsFE3l8" frameborder="0" allowfullscreen></iframe>
+		<p>Lorem ipsum dolor sit amet, dolore accusata eu eum, ius ne aperiam luptatum probatus. Facilisis efficiantur ea per, gubergren consequuntur pri at, pro audiam fastidii eu. Sea prima probatus ex, ipsum ancillae recteque sit id, constituto vituperatoribus ne vim. Ei tale dissentias mel, ius et putant tritani, id his aeterno tibique. Malis prompta per in, ius veritus democritum contentiones at, ei per agam eloquentiam. His stet aliquam assentior at, cum an magna splendide consequat.</p>
+	</div>
+
+	<div id="rightColumn" class="column" >
+		<a class="twitter-timeline" href="https://twitter.com/hashtag/TheVoice" data-widget-id="729140704480350208">#TheVoice Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+	</div>
+    </div>	
+
+
+
+
+</body>
+</html>
